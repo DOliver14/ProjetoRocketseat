@@ -77,11 +77,16 @@ body *{
     left: 0; /* direta */
     z-index: 1;  /*colocar uma camada em cima da outra */
     transform: translateY(-50%); /* transforma o elemento */  
+
+    animation: slide-back 0.4s forwards;
+}
+
+#switch button:hover{
+    outline: 8px solid var(--highlight-color);
 }
 
 .light #switch button{ /*   */
-    right: 0;
-    left: initial; /* para o botão ir para o outro lado e obrigatorio colocar esse comando*/
+   animation: slide-in 0.4s forwards;
 }
 
 #switch span {
@@ -184,3 +189,24 @@ footer{
     }
 }
 
+/* animation */
+/* slide-in deslizando o botãp */
+
+
+@keyframes slide-in {
+  from{
+    left: 0;
+  }
+  to{
+    left: 50%;
+  }
+}
+
+@keyframes slide-back{
+    from{
+        left: 50%
+    }
+    to{
+        left: 0;
+    }
+}
