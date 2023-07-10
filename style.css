@@ -37,8 +37,8 @@ body *{
     width: 100%; /* largura */
     max-width: 588px;
     /*border: 1px solid rgb(245, 61, 5);*/
-    margin: auto; 
-    padding-top: 56px auto 0px;
+    margin: 56px auto 0px; 
+    padding-top: 0 24px;
 }
 
 .profile{
