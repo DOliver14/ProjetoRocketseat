@@ -35,7 +35,7 @@ body *{
 }
 .container{
     width: 100%; /* largura */
-    max-width: 588px;
+    max-width: 589px;
     /*border: 1px solid rgb(245, 61, 5);*/
     margin: 56px auto 0px; 
     padding-top: 0 24px;
