@@ -26,7 +26,7 @@
 
 body{
      background: var(--bg-url) top center/cover;
-     margin: 50px; /* margin de todos os lados */
+     height: 100vh;
 }
 
 body *{
@@ -171,3 +171,16 @@ footer{
     text-align: center; /* alinhamento de text */
     font-size: 14px /* tamanho da fonte */
 }
+
+/* media queries */
+
+@media(min-width: 700px){
+    :root{
+        --bg-url: url(aula1/image/pcnight.jpg);
+    }
+
+    .light{
+        --bg-url: url(aula1/image/pclight.jpg);
+    }
+}
+
